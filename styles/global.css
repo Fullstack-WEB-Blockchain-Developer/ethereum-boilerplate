@@ -1,7 +1,3 @@
-/* @tailwind base;
-@tailwind components;
-@tailwind utilities; */
-
 @import url(./icytool.css);
 
 body.chakra-ui-dark {
