@@ -6,9 +6,9 @@ import ScatterChart from '../../modules/Charts/Scatter';
 
 const Home = () => {
   return (
-    <VStack w={'full'}>
-      <Heading size="md" marginBottom={6}>
-        Ethereum Boilerplate
+    <Box w={'full'}>
+      <Heading size="xl" marginBottom={6} marginTop={10} padding={20}>
+        Real-time market insights, more NFT alpha
       </Heading>
       {/* <Flex w={'full'}>
         <div className='w-1/3'>
@@ -122,7 +122,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-    </VStack>
+    </Box>
   );
 };
 

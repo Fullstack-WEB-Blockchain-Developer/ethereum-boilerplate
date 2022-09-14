@@ -63,19 +63,19 @@ const Table = () => {
                                   viewBox="0 0 24 24"
                                   fill="none"
                                   xmlns="http://www.w3.org/2000/svg"
-                                  className="mr-1 -rotate-45 text-green"
+                                  className="text-green mr-1 -rotate-45"
                                   width="14"
                                   height="14"
                                 >
                                   <path
                                     d="m14 5 7 7m0 0-7 7m7-7H3"
-                                    stroke-width="2"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
+                                    // stroke-width="2"
+                                    // stroke-linecap="round"
+                                    // stroke-linejoin="round"
                                     stroke="currentColor"
                                   ></path>
                                 </svg>
-                                <span className="font-favoritMono text-xs font-semibold text-green">7.25%</span>
+                                <span className="font-favoritMono text-green text-xs font-semibold">7.25%</span>
                               </div>
                             </div>
                           </div>

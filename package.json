@@ -9,7 +9,10 @@
     "start": "next start",
     "lint": "next lint",
     "prepare": "husky install",
-    "deploypage": "gh-pages -d .next"
+    "deploypage": "gh-pages -d .next",
+    "clear-all": "rm -rf .next node_modules",
+    "re-start": "rm -rf .next node_modules && yarn install && yarn dev",
+    "re-build": "rm -rf .next node_modules && yarn install && yarn build"
   },
   "dependencies": {
     "@chakra-ui/icons": "^2.0.8",

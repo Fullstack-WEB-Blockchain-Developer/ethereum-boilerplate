@@ -5,7 +5,7 @@ const Table = () => {
         <tr className="bg-elevation-1 hover:bg-elevation-2/60 w-full cursor-pointer transition-colors">
           <td className="whitespace-nowrap">
             <a
-              className="block cursor-pointer text-base font-normal text-blue transition duration-500 ease-in-out hover:text-blue/90"
+              className="text-blue hover:text-blue/90 block cursor-pointer text-base font-normal transition duration-500 ease-in-out"
               href="/collections/0x57f1887a8bf19b14fc0df6fd9b2acc9af147ea85"
             >
               <div className="flex flex-row items-center p-3" style={{ gap: '18px' }}>
@@ -16,14 +16,14 @@ const Table = () => {
                       stroke="currentColor"
                       stroke-width="1.5"
                       stroke-linecap="round"
-                      stroke-linejoin="round"
+                      // stroke-linejoin="round"
                     ></path>
                     <path
                       d="M7.5 7h.01"
                       stroke="currentColor"
                       stroke-width="2"
                       stroke-linecap="round"
-                      stroke-linejoin="round"
+                      // stroke-linejoin="round"
                     ></path>
                   </svg>
                 </div>
@@ -41,7 +41,7 @@ const Table = () => {
           </td>
           <td className="whitespace-nowrap">
             <a
-              className="block cursor-pointer text-base font-normal text-blue transition duration-500 ease-in-out hover:text-blue/90"
+              className="text-blue hover:text-blue/90 block cursor-pointer text-base font-normal transition duration-500 ease-in-out"
               href="/collections/0x57f1887a8bf19b14fc0df6fd9b2acc9af147ea85"
             >
               <div className="flex flex-row items-center" style={{ gap: '18px;' }}>
@@ -81,7 +81,7 @@ const Table = () => {
         <tr className="bg-elevation-1 hover:bg-elevation-2/60 w-full cursor-pointer transition-colors">
           <td className="whitespace-nowrap">
             <a
-              className="block cursor-pointer text-base font-normal text-blue transition duration-500 ease-in-out hover:text-blue/90"
+              className="text-blue hover:text-blue/90 block cursor-pointer text-base font-normal transition duration-500 ease-in-out"
               href="/collections/0x57f1887a8bf19b14fc0df6fd9b2acc9af147ea85"
             >
               <div className="flex flex-row items-center p-3" style={{ gap: '18px;' }}>
@@ -92,14 +92,14 @@ const Table = () => {
                       stroke="currentColor"
                       stroke-width="1.5"
                       stroke-linecap="round"
-                      stroke-linejoin="round"
+                      // stroke-linejoin="round"
                     ></path>
                     <path
                       d="M7.5 7h.01"
                       stroke="currentColor"
                       stroke-width="2"
                       stroke-linecap="round"
-                      stroke-linejoin="round"
+                      // stroke-linejoin="round"
                     ></path>
                   </svg>
                 </div>
@@ -117,7 +117,7 @@ const Table = () => {
           </td>
           <td className="whitespace-nowrap">
             <a
-              className="block cursor-pointer text-base font-normal text-blue transition duration-500 ease-in-out hover:text-blue/90"
+              className="text-blue hover:text-blue/90 block cursor-pointer text-base font-normal transition duration-500 ease-in-out"
               href="/collections/0x57f1887a8bf19b14fc0df6fd9b2acc9af147ea85"
             >
               <div className="flex flex-row items-center" style={{ gap: '18px;' }}>

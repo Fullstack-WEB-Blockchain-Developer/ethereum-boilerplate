@@ -1,5 +1,4 @@
 import React, { useRef, useState, useEffect } from 'react';
-import { useRouter } from 'next/router';
 import Highcharts from 'highcharts';
 import HighchartsReact from 'highcharts-react-official';
 import HighchartsExporting from 'highcharts/modules/exporting';
@@ -11,7 +10,7 @@ if (typeof Highcharts === 'object') {
 const getData = () => {
   const data = [];
   for (let i = 0; i < 100; i++) {
-    data.push([Date.now() - Math.random() * 36e5, Math.random() * 0.1]);
+    data.push({ name: 'name', x: Date.now() - Math.random() * 10 * 36e5, y: Math.random() });
   }
   return data;
 };
@@ -19,6 +18,16 @@ const getData = () => {
 const options: Highcharts.Options = {
   chart: {
     type: 'scatter',
+    backgroundColor: 'transparent',
+    style: {
+      color: 'rgb(99, 111, 128)',
+    },
+  },
+  credits: {
+    enabled: false,
+  },
+  exporting: {
+    enabled: false,
   },
   title: {
     text: '',
@@ -27,21 +36,28 @@ const options: Highcharts.Options = {
     text: '',
   },
   xAxis: {
+    type: 'datetime',
+    labels: {
+      style: {
+        color: '#fff',
+      },
+      // format: '{value:%Y-%m-%d}'
+    },
+  },
+  yAxis: {
     title: {
       text: '',
     },
     labels: {
       format: 'Ξ{text}',
+      style: {
+        color: '#fff',
+        fontSize: '14px',
+      },
     },
     startOnTick: true,
     endOnTick: true,
     showLastLabel: true,
-  },
-  yAxis: {
-    type: 'datetime',
-    // labels: {
-    //   format: '{value:%Y-%m-%d}'
-    // }
   },
   legend: {
     enabled: false,
@@ -61,17 +77,17 @@ const options: Highcharts.Options = {
         radius: 2,
         lineWidth: 2,
         lineColor: undefined,
-        states: {
-          hover: {
-            enabled: true,
-            radius: 4,
-            lineWidth: 4,
-          },
-        },
+        // states: {
+        //   hover: {
+        //     enabled: true,
+        //     radius: 4,
+        //     lineWidth: 4,
+        //   },
+        // },
       },
       tooltip: {
         headerFormat: 'Ξ{point.y}',
-        pointFormat: 'Click to view txn',
+        pointFormat: '<br/>Click to view txn',
       },
     },
     series: {
@@ -80,14 +96,15 @@ const options: Highcharts.Options = {
       // pointInterval: 6 * 36e5,
       // eslint-disable-next-line etc/no-commented-out-code
       // relativeXValue: true,
-      // point: {
-      //   events: {
-      //     click: function () {
-      //       location.href = 'https://' +
-      //         this.options.key;
-      //     }
-      //   },
-      // },
+      point: {
+        events: {
+          click() {
+            console.log('🚀 ~ file: Satter.tsx ~ line 129 ~ click ~ this.options.name', this.options);
+            // eslint-disable-next-line no-undef
+            window.open(`https://${this.options.name}`, '_blank');
+          },
+        },
+      },
     },
   },
   // series: [{
@@ -114,7 +131,6 @@ const options: Highcharts.Options = {
 };
 
 const Chart = (props: HighchartsReact.Props) => {
-  const router = useRouter();
   const chartComponentRef = useRef<HighchartsReact.RefObject>(null);
   const [chartOptions, setChartOptions] = useState<Highcharts.Options>();
 
@@ -124,15 +140,6 @@ const Chart = (props: HighchartsReact.Props) => {
       series: [
         {
           type: 'scatter',
-          point: {
-            events: {
-              click(event) {
-                router.push('/another-page');
-                console.log('🚀 ~ file: Scatter.tsx ~ line 80 ~ click ~ event', event);
-                console.log('🚀this.name', this.name);
-              },
-            },
-          },
           color: 'rgba(45, 166, 230, 0.5)',
           data: getData(),
         },

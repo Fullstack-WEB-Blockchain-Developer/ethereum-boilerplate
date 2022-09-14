@@ -1,0 +1,123 @@
+/* @tailwind base; */
+/* @tailwind components;
+@tailwind utilities; */
+
+@import url(./icytool.css);
+
+body.chakra-ui-dark {
+  --elevation-0: var(--color-gray-100);
+  --elevation-1: var(--color-gray-90);
+  --elevation-2: var(--color-gray-80);
+  --elevation-3: var(--color-gray-70);
+  --theme-green: 95 206 134;
+  --theme-red: 235 72 76;
+  --theme-text-1: 243 245 248;
+  --theme-text-2: 164 166 168;
+  --theme-text-3: 117 118 119;
+  --theme-border-1: 41 42 43;
+  --theme-border-2: 67 68 69;
+  --theme-border-3: 101 102 103;
+}
+
+.chakra-ui-dark .chakra-ui-dark\:divide-gray-80 > :not([hidden]) ~ :not([hidden]) {
+  --tw-divide-opacity: 1;
+  border-color: rgb(var(--color-gray-80) / var(--tw-divide-opacity));
+}
+
+.chakra-ui-dark .chakra-ui-dark\:border-gray-80 {
+  --tw-border-opacity: 1;
+  border-color: rgb(var(--color-gray-80) / var(--tw-border-opacity));
+}
+
+.chakra-ui-dark .chakra-ui-dark\:border-gray-70 {
+  --tw-border-opacity: 1;
+  border-color: rgb(var(--color-gray-70) / var(--tw-border-opacity));
+}
+
+.chakra-ui-dark .chakra-ui-dark\:bg-gray-80 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(var(--color-gray-80) / var(--tw-bg-opacity));
+}
+
+.chakra-ui-dark .chakra-ui-dark\:bg-gray-70 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(var(--color-gray-70) / var(--tw-bg-opacity));
+}
+
+.chakra-ui-dark .chakra-ui-dark\:bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(var(--color-gray-100) / var(--tw-bg-opacity));
+}
+
+.chakra-ui-dark .chakra-ui-dark\:bg-icy-green {
+  --tw-bg-opacity: 1;
+  background-color: rgb(var(--theme-green) / var(--tw-bg-opacity));
+}
+
+.chakra-ui-dark .chakra-ui-dark\:bg-gray-90 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(var(--color-gray-90) / var(--tw-bg-opacity));
+}
+
+.chakra-ui-dark .chakra-ui-dark\:bg-elevation-0 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(var(--elevation-0) / var(--tw-bg-opacity));
+}
+
+.chakra-ui-dark .chakra-ui-dark\:bg-gray-10 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(var(--color-gray-10) / var(--tw-bg-opacity));
+}
+
+.chakra-ui-dark .chakra-ui-dark\:bg-gray-50 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(var(--color-gray-50) / var(--tw-bg-opacity));
+}
+
+.chakra-ui-dark .chakra-ui-dark\:bg-opacity-70 {
+  --tw-bg-opacity: 0.7;
+}
+
+.chakra-ui-dark .chakra-ui-dark\:bg-opacity-90 {
+  --tw-bg-opacity: 0.9;
+}
+
+.chakra-ui-dark .chakra-ui-dark\:text-gray-0 {
+  --tw-text-opacity: 1;
+  color: rgb(var(--color-gray-0) / var(--tw-text-opacity));
+}
+
+.chakra-ui-dark .chakra-ui-dark\:text-gray-10 {
+  --tw-text-opacity: 1;
+  color: rgb(var(--color-gray-10) / var(--tw-text-opacity));
+}
+
+.chakra-ui-dark .chakra-ui-dark\:text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.chakra-ui-dark .chakra-ui-dark\:text-gray-50 {
+  --tw-text-opacity: 1;
+  color: rgb(var(--color-gray-50) / var(--tw-text-opacity));
+}
+
+.chakra-ui-dark .chakra-ui-dark\:hover\:bg-gray-90:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(var(--color-gray-90) / var(--tw-bg-opacity));
+}
+
+.chakra-ui-dark .chakra-ui-dark\:hover\:bg-gray-80:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(var(--color-gray-80) / var(--tw-bg-opacity));
+}
+
+.chakra-ui-dark .hover\:dark\:text-gray-0:hover {
+  --tw-text-opacity: 1;
+  color: rgb(var(--color-gray-0) / var(--tw-text-opacity));
+}
+
+.chakra-ui-dark .chakra-ui-dark\:focus\:border-primary:focus {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 206 255 / var(--tw-border-opacity));
+}
