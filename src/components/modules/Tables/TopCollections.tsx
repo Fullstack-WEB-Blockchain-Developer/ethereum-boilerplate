@@ -69,9 +69,9 @@ const Table = () => {
                                 >
                                   <path
                                     d="m14 5 7 7m0 0-7 7m7-7H3"
-                                    // stroke-width="2"
-                                    // stroke-linecap="round"
-                                    // stroke-linejoin="round"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
                                     stroke="currentColor"
                                   ></path>
                                 </svg>

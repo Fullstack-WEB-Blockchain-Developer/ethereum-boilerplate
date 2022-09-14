@@ -16,14 +16,14 @@ const Table = () => {
                       stroke="currentColor"
                       stroke-width="1.5"
                       stroke-linecap="round"
-                      // stroke-linejoin="round"
+                      stroke-linejoin="round"
                     ></path>
                     <path
                       d="M7.5 7h.01"
                       stroke="currentColor"
                       stroke-width="2"
                       stroke-linecap="round"
-                      // stroke-linejoin="round"
+                      stroke-linejoin="round"
                     ></path>
                   </svg>
                 </div>
@@ -92,14 +92,14 @@ const Table = () => {
                       stroke="currentColor"
                       stroke-width="1.5"
                       stroke-linecap="round"
-                      // stroke-linejoin="round"
+                      stroke-linejoin="round"
                     ></path>
                     <path
                       d="M7.5 7h.01"
                       stroke="currentColor"
                       stroke-width="2"
                       stroke-linecap="round"
-                      // stroke-linejoin="round"
+                      stroke-linejoin="round"
                     ></path>
                   </svg>
                 </div>
